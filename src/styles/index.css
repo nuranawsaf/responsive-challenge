@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE STYLES */
+@layer base {
+  body {
+    font-size: 1rem;
+    background: #f7f8fd;
+  }
+
+  h1 {
+    @apply font-jost text-lg font-semibold  leading-[35px] tracking-[-0.33px] lg:text-[24px];
+  }
+
+  h2 {
+    @apply font-jost text-[20px] font-semibold  leading-[29px] tracking-[-0.25px];
+  }
+
+  h3 {
+    @apply font-jost text-[14px] font-semibold leading-[26px] tracking-[-0.25px] md:text-[18px];
+  }
+
+  h4 {
+    @apply font-jost text-[14px] font-light leading-[20px] tracking-[-0.2px];
+  }
+
+  h5 {
+    @apply font-jost text-[13px] font-light leading-[20px] tracking-[-0.2px];
+  }
+
+  p {
+  }
+  .p_small {
+  }
+  a {
+  }
+
+  .button-1 {
+    @apply rounded-xl bg-secondary px-4 py-3 font-jost  text-sm font-medium   not-italic text-white hover:bg-secondaryLight md:px-7;
+  }
+
+  .button-2 {
+    @apply rounded-xl bg-tertiary px-4 py-3 font-jost text-sm font-medium   not-italic text-white hover:bg-tertiaryLight md:px-7;
+  }
+
+  .button-3 {
+    @apply rounded-xl bg-primary px-4 py-3 font-jost text-sm font-medium   not-italic text-white hover:bg-primaryLight md:px-7;
+  }
+
+  .button-4 {
+    @apply rounded-xl bg-orange py-3 px-4 font-jost  text-sm font-medium   not-italic text-white hover:bg-orangeLight md:px-7;
+  }
+
+  .bg-style {
+    @apply bg-cover bg-center bg-no-repeat;
+  }
+  .sb {
+    @apply border border-red-500;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: calc(100% - 80px);
+    max-width: 1320px;
+  }
+
+  @media (min-width: 960px) {
+    .container {
+      width: calc(100% - 160px);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container {
+      width: calc(100% - 180px);
+    }
+  }
+}
+
+.wrapper {
+  @apply mx-auto lg:w-[1110px];
+}
+
+.wrapper2 {
+  @apply mx-auto lg:w-[730px];
+}
+
+.bg-color {
+  background-color: linear-gradient(90deg, #f352d2, 180deg #f352d2), #0c0b0b;
+}
+
+/* CUSTOM COMPONENT STYLES */
+@layer components {
+}
+
+/* CUSTOM UTILITIES STYLES */
+@layer utilities {
+}
